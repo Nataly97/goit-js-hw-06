@@ -26,6 +26,7 @@ const btnBorrar = document.querySelector("[data-destroy]");
 
 
 btnCrear.addEventListener("click", (evet) => {
+  destroyBoxes();
   evet.preventDefault();
   createBoxes(inputValue.value);
 });

@@ -5,7 +5,7 @@ textInput.addEventListener("blur", () => {
     const inputLength = textInput.value.length;
     const minInput = textInput.getAttribute("data-length");
 
-    if (inputLength < minInput) {
+    if (inputLength < minInput || inputLength > minInput) {
         return textInput.classList.add("invalid");
     }
     textInput.classList.remove("invalid");
